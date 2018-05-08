@@ -131,13 +131,10 @@ if(isset($_POST["mail_list"])){
 			else
 			{
 				echo "email has been sent successfully";
-      } 
-
-
+      }
       $mail->ClearAllRecipients( );
+      //line added
     }
-
-
     }
     //echo '<meta http-equiv="Refresh" content="1; url=compose.php">';
 }
