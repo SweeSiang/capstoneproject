@@ -123,7 +123,6 @@ if(isset($_POST["mail_list"])){
 			$mail->Body = "<p>$message</p><br><br>If you do not want to receive such emails in the future, please <a href=$link>unsubscribe</a> here.";
       //$mail->AltBody = "This is the plain text version of the email content";
       
-            
 			if(!$mail->send())
 			{
 				echo "Mailer Error: " . $mail->ErrorInfo;
@@ -133,7 +132,6 @@ if(isset($_POST["mail_list"])){
 				echo "email has been sent successfully";
       }
       $mail->ClearAllRecipients( );
-      //line added
     }
     }
     //echo '<meta http-equiv="Refresh" content="1; url=compose.php">';
